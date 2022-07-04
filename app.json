@@ -1,0 +1,45 @@
+{
+    "name": "FuN BoT",
+    "description": "PROFILE PICTURE & LAST NAME into a real time clock & to change your BIO automatically,Made With 💞 By ~(c)XnKiT.",
+    "repository": "https://github.com/XnKiT/PyRo-FuN",
+    "keywords": [
+        "date time userbot",
+        "changes telegram bio automatically",
+        "turns profile picture in to a real time clock",
+        "turns last name in to a real time clock",
+        "Telegram userbot",
+        "Pyrogram userbot"
+    ],
+    "env": {
+        "API_ID": {
+            "description": "Get from my.telegram.org/apps",
+            "value": "14627413",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get from my.telegram.org/apps",
+            "value": "4d5ff4db45a7e931930d0c923a7fb295",
+            "required": true
+        },
+        "SESSION_STRING": {
+            "description": "A valid Pyrogram session name",
+            "required": true
+        },
+        "TIME_ZONE": {
+            "description": "Your time zone (Example: Asia/Kolkata)",
+            "value": "Asia/Kolkata",
+            "required": true 
+        }
+    },
+    "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
